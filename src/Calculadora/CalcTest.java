@@ -12,7 +12,7 @@ import org.junit.Test;
 
 public class CalcTest {
 	
-	double a;
+	double a; 
 	double b;
 	Calculadora calc = null;
 
