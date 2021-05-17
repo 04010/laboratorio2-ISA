@@ -55,6 +55,9 @@ public class Main {
             case 4: 
                 break;
             case 5:
+            	System.out.println("Introduce el operando: ");
+            	double x = input.nextDouble();
+            	System.out.println("La raíz de " + x + " es: " + c.raiz(x));
                 break;
             case 6: 
                 System.out.println("Saliendo de calculadora...\nOK");
