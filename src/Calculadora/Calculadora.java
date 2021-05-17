@@ -8,12 +8,8 @@ package Calculadora;
  *
  */
 public class Calculadora {
-	private int op1;
-	private int op2;
 	
-	public Calculadora(int o1, int o2) {
-		op1 = o1;
-		op2 = o2;
+	public Calculadora() {
 	}
 	
 	public int suma(int a, int b) {
@@ -32,7 +28,14 @@ public class Calculadora {
 		return a/b;
 	}
 	
-	public int raiz(int a) {
-		return a;
+	public double raiz(int a) {
+		double x = 1.0;
+        int k;
+        
+        for(k = 1; k < 10; k++){
+            x = (x + a/x) / 2;
+        }
+        
+		return x;
 	}
 }
