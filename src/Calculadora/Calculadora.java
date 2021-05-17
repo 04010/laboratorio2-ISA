@@ -29,7 +29,7 @@ public class Calculadora {
 	}
 	
 	public double raiz(int a) {
-		double x = 1.0;
+            double x = 1.0;
         int k;
         
         for(k = 1; k < 10; k++){

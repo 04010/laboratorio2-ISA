@@ -1,7 +1,9 @@
 /**
- * 
+ *
  */
 package Calculadora;
+
+import java.util.Scanner;
 
 /**
  * @author David
@@ -9,18 +11,43 @@ package Calculadora;
  */
 public class Main {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		Calculadora c = new Calculadora();
-
-		System.out.println("25 + 5 = " + c.suma(25, 5));
-		System.out.println("25 - 5 = " + c.resta(25, 5));
-		System.out.println("25 x 5 = " + c.multiplica(25, 5));
-		System.out.println("25 / 5 = " + c.divide(25, 5));
-		System.out.println("Raiz de 25 = " + c.raiz(25));
-
-	}
-
-}
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        Calculadora c = new Calculadora();
+        Scanner input = new Scanner(System.in);
+        boolean mainLoop = true;
+        int choice;
+        do{
+            System.out.println("Menu calculadora\n");
+            System.out.print("1.) Suma \n");
+            System.out.print("2.) Resta.\n");
+            System.out.print("3.) Multiplicacion.\n");
+            System.out.print("4.) Division.\n");
+            System.out.print("5.) Raiz cuadrada.\n");
+            System.out.print("6.) Salir\n");
+            System.out.print("\nIntroduce la opción deseada: ");
+            choice = input.nextInt();
+            switch(choice){
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+               break;
+            case 4: 
+                break;
+            case 5:
+                break;
+            case 6: 
+                System.out.println("Saliendo de calculadora...");
+                System.exit(0);
+                break;
+            default:
+            System.out.println(choice + " no es una opción válida! Selecciona una opción del menú.");
+            }
+        }while(choice != 6);    
+    }
+}    
+    
