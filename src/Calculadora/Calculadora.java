@@ -20,15 +20,15 @@ public class Calculadora {
 		return a-b;
 	}
 	
-	public int multiplica(int a, int b) {
+	public double multiplica(double a, double b) {
 		return a*b;
 	}
 	
-	public int divide(int a, int b) {
+	public double divide(double a, double b) {
 		return a/b;
 	}
 	
-	public double raiz(int a) {
+	public double raiz(double a) {
             double x = 1.0;
         int k;
         
