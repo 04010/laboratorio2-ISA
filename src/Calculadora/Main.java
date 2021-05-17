@@ -38,7 +38,12 @@ public class Main {
                 double b = input.nextInt();
                 System.out.println("El resultado de " + a + " + " + b + " es: " + c.suma(a,b));
                 break;
-            case 2:                
+            case 2:
+                System.out.println("Introduce el primer operando: ");
+                double d = input.nextInt();
+                System.out.println("Introduce el segundo operando: ");
+                double e = input.nextInt();
+                System.out.println("El resultado de " + d + " - " + e + " es: " + c.resta(d,e));
                 break;
             case 3:
                break;
