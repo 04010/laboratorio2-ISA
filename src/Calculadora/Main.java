@@ -17,7 +17,7 @@ public class Main {
     public static void main(String[] args) {
         Calculadora c = new Calculadora();
         Scanner input = new Scanner(System.in);
-        boolean mainLoop = true;
+        //boolean mainLoop = true;
         int choice;
         do{
             System.out.println("Menu calculadora\n");
@@ -27,7 +27,7 @@ public class Main {
             System.out.print("4.) Division.\n");
             System.out.print("5.) Raiz cuadrada.\n");
             System.out.print("6.) Salir\n");
-            System.out.print("\nIntroduce la opción deseada: ");
+            System.out.print("\nIntroduce la opcion deseada: ");
             choice = input.nextInt();
             switch(choice){
             case 1:
@@ -35,7 +35,7 @@ public class Main {
                 double a = input.nextInt();
                 System.out.println("Introduce el segundo operando:\n");
                 double b = input.nextInt();
-                c.suma(choice, choice);
+                c.suma(a,b);
                 break;
             case 2:                
                 break;
@@ -46,11 +46,11 @@ public class Main {
             case 5:
                 break;
             case 6: 
-                System.out.println("Saliendo de calculadora...");
+                System.out.println("Saliendo de calculadora...\n");
                 System.exit(0);
                 break;
             default:
-            System.out.println(choice + " no es una opción válida! Selecciona una opción del menú.");
+            System.out.println(choice + " no es una opcion valida! Selecciona una opcion del menu.");
             }
         }while(choice != 6);    
     }
