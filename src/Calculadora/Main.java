@@ -46,7 +46,12 @@ public class Main {
                 System.out.println("El resultado de " + d + " - " + e + " es: " + c.resta(d,e));
                 break;
             case 3:
-               break;
+                System.out.println("Introduce el primer operando: ");
+                double f = input.nextInt();
+                System.out.println("Introduce el segundo operando: ");
+                double g = input.nextInt();
+                System.out.println("El resultado de " + f + " * " + g + " es: " + c.multiplica(f,g));
+                break;
             case 4: 
                 break;
             case 5:
