@@ -12,7 +12,7 @@ public class Calculadora {
 	public Calculadora() {
 	}
 	
-	public int suma(int a, int b) {
+	public double suma(double a, double b) {
 		return a+b;
 	}
 	

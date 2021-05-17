@@ -31,8 +31,13 @@ public class Main {
             choice = input.nextInt();
             switch(choice){
             case 1:
+                System.out.println("Introduce el primer operando:\n");
+                double a = input.nextInt();
+                System.out.println("Introduce el segundo operando:\n");
+                double b = input.nextInt();
+                c.suma(choice, choice);
                 break;
-            case 2:
+            case 2:                
                 break;
             case 3:
                break;
