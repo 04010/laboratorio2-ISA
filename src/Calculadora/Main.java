@@ -13,8 +13,9 @@ public class Main {
 
     /**
      * @param args
+     * @throws InterruptedException 
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Calculadora c = new Calculadora();
         Scanner input = new Scanner(System.in);
         //boolean mainLoop = true;
@@ -31,11 +32,11 @@ public class Main {
             choice = input.nextInt();
             switch(choice){
             case 1:
-                System.out.println("Introduce el primer operando:\n");
+                System.out.println("Introduce el primer operando: ");
                 double a = input.nextInt();
-                System.out.println("Introduce el segundo operando:\n");
+                System.out.println("Introduce el segundo operando: ");
                 double b = input.nextInt();
-                System.out.println(c.suma(a,b));
+                System.out.println("El resultado de " + a + " + " + b + " es: " + c.suma(a,b));
                 break;
             case 2:                
                 break;
@@ -46,12 +47,15 @@ public class Main {
             case 5:
                 break;
             case 6: 
-                System.out.println("Saliendo de calculadora...\n");
+                System.out.println("Saliendo de calculadora...\nOK");
+                input.close();
                 System.exit(0);
                 break;
             default:
             System.out.println(choice + " no es una opcion valida! Selecciona una opcion del menu.");
             }
+            System.out.println("Volviendo al menu...");
+            Thread.sleep(3000);
         }while(choice != 6);    
     }
 }    
