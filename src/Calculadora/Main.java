@@ -35,7 +35,7 @@ public class Main {
                 double a = input.nextInt();
                 System.out.println("Introduce el segundo operando:\n");
                 double b = input.nextInt();
-                c.suma(a,b);
+                System.out.println(c.suma(a,b));
                 break;
             case 2:                
                 break;
