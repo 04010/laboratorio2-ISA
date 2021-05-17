@@ -33,26 +33,31 @@ public class Main {
             switch(choice){
             case 1:
                 System.out.println("Introduce el primer operando: ");
-                double a = input.nextInt();
+                double a = input.nextDouble();
                 System.out.println("Introduce el segundo operando: ");
-                double b = input.nextInt();
+                double b = input.nextDouble();
                 System.out.println("El resultado de " + a + " + " + b + " es: " + c.suma(a,b));
                 break;
             case 2:
                 System.out.println("Introduce el primer operando: ");
-                double d = input.nextInt();
+                double d = input.nextDouble();
                 System.out.println("Introduce el segundo operando: ");
-                double e = input.nextInt();
+                double e = input.nextDouble();
                 System.out.println("El resultado de " + d + " - " + e + " es: " + c.resta(d,e));
                 break;
             case 3:
                 System.out.println("Introduce el primer operando: ");
-                double f = input.nextInt();
+                double f = input.nextDouble();
                 System.out.println("Introduce el segundo operando: ");
-                double g = input.nextInt();
+                double g = input.nextDouble();
                 System.out.println("El resultado de " + f + " * " + g + " es: " + c.multiplica(f,g));
                 break;
-            case 4: 
+            case 4:
+				System.out.println("Introduce el primer operando: ");
+                double h = input.nextDouble();
+                System.out.println("Introduce el segundo operando: ");
+                double i = input.nextDouble();
+                System.out.println("El resultado de " + h + " / " + i + " es: " + c.divide(h,i));
                 break;
             case 5:
                 break;
