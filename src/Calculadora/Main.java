@@ -53,9 +53,9 @@ public class Main {
                 System.out.println("El resultado de " + f + " * " + g + " es: " + c.multiplica(f,g));
                 break;
             case 4:
-				System.out.println("Introduce el primer operando: ");
+				System.out.println("Introduce el dividendo: ");
                 double h = input.nextDouble();
-                System.out.println("Introduce el segundo operando: ");
+                System.out.println("Introduce el divisor: ");
                 double i = input.nextDouble();
                 System.out.println("El resultado de " + h + " / " + i + " es: " + c.divide(h,i));
                 break;
