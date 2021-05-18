@@ -15,19 +15,19 @@ public class Calculadora {
 	public double suma(double a, double b) {
 		return a+b;
 	}
-	
+	//metodo para restar dos numeros
 	public double resta(double a, double b) {
 		return a-b;
 	}
-	
+	//metodo para multiplicar dos numeros
 	public double multiplica(double a, double b) {
 		return a*b;
 	}
-	
+	//metodo para dividir dos numeros
 	public double divide(double a, double b) {
 		return a/b;
 	}
-	
+	//metodo para obtener raiz cuadrada de dos numeros
 	public double raiz(double a) {
             double x = 1.0;
         int k;
