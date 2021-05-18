@@ -11,7 +11,7 @@ public class Calculadora {
 	
 	public Calculadora() {
 	}
-	
+	//metodo para suma dos numeros
 	public double suma(double a, double b) {
 		return a+b;
 	}

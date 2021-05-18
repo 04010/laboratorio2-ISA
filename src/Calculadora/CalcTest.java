@@ -3,11 +3,18 @@
  */
 package Calculadora;
 
+<<<<<<< HEAD
 import static org.junit.Assert.assertEquals;
+=======
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.Before;
+>>>>>>> cb96dbfcb9c6e14e04719fe76e7643abc702955a
 import org.junit.Test;
 
 
 
+<<<<<<< HEAD
 
 
 //import org.junit.Test;
@@ -19,16 +26,26 @@ import org.junit.Test;
 
 
 class CalcTest {
+=======
+public class CalcTest {
+	
+	double a; 
+	double b;
+	Calculadora calc = null;
+
+	@Before
+	public void setUp() {
+		a = 25;
+		b = 5;
+		calc = new Calculadora();
+	}
+>>>>>>> cb96dbfcb9c6e14e04719fe76e7643abc702955a
 	
 	@Test
 	public void testSuma() {
 		// Arrange
-		double a = 25;
-		double b = 5;
-		Calculadora calc = null;
 		double resulSuma;
 		// Act
-		calc = new Calculadora();
 		resulSuma = calc.suma(a, b);
 		// Test
 		assertEquals(30, resulSuma);
@@ -37,12 +54,8 @@ class CalcTest {
 	@Test
 	public void testResta() {
 		// Arrange
-		double a = 25;
-		double b = 5;
-		Calculadora calc = null;
 		double resulResta;
 		// Act
-		calc = new Calculadora();
 		resulResta = calc.resta(a, b);
 		// Test
 		assertEquals(20, resulResta);
@@ -50,12 +63,8 @@ class CalcTest {
 	
 	public void testMultiplica() {
 		// Arrange
-		double a = 25;
-		double b = 5;
-		Calculadora calc = null;
 		double resulMultiplica;
 		// Act
-		calc = new Calculadora();
 		resulMultiplica = calc.multiplica(a, b);
 		// Test
 		assertEquals(125, resulMultiplica);
@@ -64,12 +73,8 @@ class CalcTest {
 	@Test
 	public void testDivide() {
 		// Arrange
-		double a = 25;
-		double b = 5;
-		Calculadora calc = null;
 		double resulDivide;
 		// Act
-		calc = new Calculadora();
 		resulDivide = calc.divide(a, b);
 		// Test
 		assertEquals(5, resulDivide);
@@ -78,11 +83,8 @@ class CalcTest {
 	@Test
 	public void testRaiz() {
 		// Arrange
-		double a = 25;
-		Calculadora calc = null;
 		double resulRaiz;
 		// Act
-		calc = new Calculadora();
 		resulRaiz = calc.raiz(a);
 		// Test
 		assertEquals(5, resulRaiz);
