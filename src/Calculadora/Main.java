@@ -1,6 +1,3 @@
-/**
- *
- */
 package Calculadora;
 
 import java.util.Scanner;
