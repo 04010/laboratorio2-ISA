@@ -1,12 +1,5 @@
-/**
- * 
- */
 package Calculadora;
 
-/**
- * @author David
- *
- */
 public class Calculadora {
 	
 	public Calculadora() {
