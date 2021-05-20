@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 package Calculadora;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -5,9 +8,11 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.Before;
 import org.junit.Test;
 
+
+
 public class CalcTest {
 	
-	double a; 
+	double a;
 	double b;
 	Calculadora calc = null;
 
@@ -18,7 +23,6 @@ public class CalcTest {
 		calc = new Calculadora();
 	}
 	
-	// Metodo que testea la funcion suma de la calculadora
 	@Test
 	public void testSuma() {
 		// Arrange
@@ -28,8 +32,7 @@ public class CalcTest {
 		// Test
 		assertEquals(30, resulSuma);
 	}
-
-	// Metodo que testea la funcion resta de la calculadora
+	
 	@Test
 	public void testResta() {
 		// Arrange
@@ -38,10 +41,8 @@ public class CalcTest {
 		resulResta = calc.resta(a, b);
 		// Test
 		assertEquals(20, resulResta);
-	}
-
-	// Metodo que testea la funcion multiplicacion de la calculadora
-	@Test
+	}	@Test
+	
 	public void testMultiplica() {
 		// Arrange
 		double resulMultiplica;
@@ -50,8 +51,7 @@ public class CalcTest {
 		// Test
 		assertEquals(125, resulMultiplica);
 	}	
-
-	// Metodo que testea la funcion division de la calculadora
+	
 	@Test
 	public void testDivide() {
 		// Arrange
@@ -61,8 +61,7 @@ public class CalcTest {
 		// Test
 		assertEquals(5, resulDivide);
 	}	
-
-	// Metodo que testea la funcion raiz de la calculadora
+	
 	@Test
 	public void testRaiz() {
 		// Arrange

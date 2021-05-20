@@ -5,8 +5,16 @@ package Calculadora;
 
 import java.util.Scanner;
 
+/**
+ * @author David
+ *
+ */
 public class Main {
 
+    /**
+     * @param args
+     * @throws InterruptedException 
+     */
     public static void main(String[] args) throws InterruptedException {
         Calculadora c = new Calculadora();
         Scanner input = new Scanner(System.in);
