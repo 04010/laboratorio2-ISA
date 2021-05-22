@@ -76,10 +76,8 @@ public class CalcTest {
 		double esperado;
 		// Act
 		resulRaiz = calc.raiz(r);
-		esperado = 3,24037034920393;
+		esperado = 3.24037034920393;
 		// Test
-		//assertEquals(3.24037034920393, resulRaiz);
-		assertTrue("Pasa Test con margen en el resultado inferior a 0.0001", abs(esperado-resulRaiz) < 0.0001);
-		
+		assertTrue(abs(esperado-resulRaiz) < 0.0001,"Pasa Test con margen en el resultado inferior a 0.0001");
 	}
 }
