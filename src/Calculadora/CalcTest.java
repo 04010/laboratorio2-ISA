@@ -16,7 +16,7 @@ public class CalcTest {
 	public void setUp() {
 		a = 25;
 		b = 5;
-		r = 10.5;
+		r =  23.275168;
 		calc = new Calculadora();
 	}
 	
