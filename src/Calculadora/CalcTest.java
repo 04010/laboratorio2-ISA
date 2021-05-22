@@ -70,7 +70,19 @@ public class CalcTest {
 		// Arrange
 		double resulRaiz;
 		// Act
-		resulRaiz = calc.raiz_metodo_babilonico(r);
+		resulRaiz = calc.raiz(r);
+		// Test
+		assertEquals(3.24037034920393, resulRaiz);
+		
+	}
+	
+	// Metodo que testea la funcion raiz con metodo babilonico de la calculadora
+	@Test
+	public void testRaizBabilonica() {
+		// Arrange
+		double resulRaiz;
+		// Act
+		resulRaiz = calc.raizMetodoBabilonico(r);
 		// Test
 		assertEquals(3.24037034920393, resulRaiz);
 		
