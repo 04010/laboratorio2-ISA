@@ -68,7 +68,7 @@ public class Main {
 	            Thread.sleep(3000);
 	        }while(choice != 6);
         }catch(Exception e){
-        	System.out.println("Parametros invalidos. Saliendo de la calculadora.\nOK");
+        	System.err.println("Parametros invalidos. Saliendo de la calculadora.\nOK");
             input.close();
         }
     }
