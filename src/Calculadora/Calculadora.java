@@ -35,7 +35,7 @@ public class Calculadora {
         } else if (a == 0) {
             return 0;
         } else {
-            while (abs(resta(cociente, promedio))>0.00001) {
+            while (abs(resta(cociente, promedio))>0.0001) {
                 x = promedio;
                 cociente = divide(a, x);
                 promedio = suma(x, cociente)/2.0;

@@ -11,6 +11,10 @@ public class CalcTest {
 	double b; 
 	double r;
 	Calculadora calc = null;
+	
+	public static double abs(double numero) {
+        return numero > 0 ? numero : -numero;
+    }
 
 	@Before
 	public void setUp() {
@@ -69,10 +73,13 @@ public class CalcTest {
 	public void testRaiz() {
 		// Arrange
 		double resulRaiz;
+		double esperado;
 		// Act
 		resulRaiz = calc.raiz(r);
+		esperado = 3,24037034920393;
 		// Test
-		assertEquals(3.24037034920393, resulRaiz);
+		//assertEquals(3.24037034920393, resulRaiz);
+		assertTrue("Pasa Test con margen en el resultado inferior a 0.0001", abs(esperado-resulRaiz) < 0.0001);
 		
 	}
 }
