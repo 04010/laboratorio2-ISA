@@ -25,18 +25,7 @@ public class Calculadora {
 		return a/b;
 	}
 	//metodo para obtener raiz cuadrada de dos numeros
-	public double raiz(double a) {
-            double x = 1.0;
-        int k;
-        
-        for(k = 1; k < 10; k++){
-            x = (x + a/x) / 2;
-        }
-        
-		return x;
-	}
-	//metodo para obtener raiz cuadrada de dos numeros usando el metodo babilonico
-	public double raizMetodoBabilonico(double a){
+	public double raiz(double a){
 		double x = 2.0;
         double cociente = divide(a, x);
         double promedio = suma(x, cociente) / 2.0;

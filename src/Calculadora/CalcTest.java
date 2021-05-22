@@ -16,7 +16,7 @@ public class CalcTest {
 	public void setUp() {
 		a = 25;
 		b = 5;
-		r =  23.275168;
+		r =  10.5;
 		calc = new Calculadora();
 	}
 	
@@ -71,18 +71,6 @@ public class CalcTest {
 		double resulRaiz;
 		// Act
 		resulRaiz = calc.raiz(r);
-		// Test
-		assertEquals(3.24037034920393, resulRaiz);
-		
-	}
-	
-	// Metodo que testea la funcion raiz con metodo babilonico de la calculadora
-	@Test
-	public void testRaizBabilonica() {
-		// Arrange
-		double resulRaiz;
-		// Act
-		resulRaiz = calc.raizMetodoBabilonico(r);
 		// Test
 		assertEquals(3.24037034920393, resulRaiz);
 		
