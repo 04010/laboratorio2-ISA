@@ -49,6 +49,7 @@ public class Calculadora {
                 x = promedio;
                 cociente = divide(a, x);
                 promedio = suma(x, cociente)/2.0;
+            }
         }
         return promedio;
 	}

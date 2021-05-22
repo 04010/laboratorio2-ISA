@@ -8,13 +8,15 @@ import org.junit.Test;
 public class CalcTest {
 	
 	double a; 
-	double b;
+	double b; 
+	double r;
 	Calculadora calc = null;
 
 	@Before
 	public void setUp() {
 		a = 25;
 		b = 5;
+		r = 10.5;
 		calc = new Calculadora();
 	}
 	
@@ -68,9 +70,9 @@ public class CalcTest {
 		// Arrange
 		double resulRaiz;
 		// Act
-		resulRaiz = calc.raiz(a);
+		resulRaiz = calc.raiz_metodo_babilonico(r);
 		// Test
-		assertEquals(5, resulRaiz);
+		assertEquals(3.24037034920393, resulRaiz);
 		
 	}
 }

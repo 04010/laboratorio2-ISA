@@ -51,7 +51,7 @@ public class Main {
             case 5:
             	System.out.println("Introduce el operando: ");
             	double x = input.nextDouble();
-            	System.out.println("La raiz de " + x + " es: " + c.raiz(x));
+            	System.out.println("La raiz de " + x + " es: " + c.raiz_metodo_babilonico(x));
                 break;
             case 6: 
                 System.out.println("Saliendo de calculadora...\nOK");
