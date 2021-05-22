@@ -71,5 +71,6 @@ public class CalcTest {
 		resulRaiz = calc.raiz(a);
 		// Test
 		assertEquals(5, resulRaiz);
+		
 	}
 }
